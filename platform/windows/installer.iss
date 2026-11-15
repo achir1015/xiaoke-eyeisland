@@ -1,9 +1,9 @@
 ﻿; 小柯機器人眼動探險島 Windows 安裝程式（Inno Setup 6）
-; 用法：ISCC /DAppVersion=1.0.0 installer.iss
+; 用法：ISCC /DAppVersion=1.0.1 installer.iss
 ; 安裝到使用者資料夾，不需系統管理員權限；遊戲內更新會用 /SILENT 覆蓋安裝並自動重開。
 
 #ifndef AppVersion
-  #define AppVersion "1.0.0"
+  #define AppVersion "1.0.1"
 #endif
 #define AppName "小柯機器人眼動探險島"
 #define AppExe "XiaokeEyeIsland.exe"

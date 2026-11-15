@@ -7,7 +7,7 @@ config_version=5
 
 config/name="小柯機器人眼動探險島"
 config/description="給 3～10 歲孩子的 3D 眼動視知覺遊戲：搭配眼動鼠，用眼睛看就能玩，五大主題 30 關與眼動評估報告"
-config/version="1.0.0"
+config/version="1.0.1"
 run/main_scene="res://scenes/main.tscn"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"

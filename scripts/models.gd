@@ -422,7 +422,7 @@ static func item(kind: String) -> Node3D:
 			var c := Color("#FFC9C9")
 			for i in 5:
 				var a := PI * (0.1 + 0.2 * i)
-				n.add_child(sphere(0.1, c.darkened(0.08 * (i % 2)), Vector3(cos(a) * 0.17, sin(a) * 0.17 - 0.05, 0), Vector3(0.8, 2.2, 0.4)).duplicate())
+				n.add_child(sphere(0.1, c.darkened(0.08 * (i % 2)), Vector3(cos(a) * 0.17, sin(a) * 0.17 - 0.05, 0), Vector3(0.8, 2.2, 0.4)))
 				n.get_child(-1).rotation.z = a - PI / 2
 			n.add_child(sphere(0.12, c, Vector3(0, -0.08, 0.02), Vector3(1.4, 0.7, 0.4)))
 	return n

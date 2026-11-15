@@ -1,7 +1,7 @@
 extends Node
 ## 全域狀態：版本、小朋友檔案、設定、過關星星、評估紀錄存取。
 
-const APP_VERSION := "1.0.0"
+const APP_VERSION := "1.0.1"
 const APP_NAME := "小柯機器人眼動探險島"
 const AUTHOR := "系統開發：吳玉柱 先生 與 Claude AI Opus 5.5"
 
