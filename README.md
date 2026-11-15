@@ -20,11 +20,17 @@
 - **相對配色**：每座樂園由一個主色相推算整組顏色（同色相深淺＋類似色點綴＋互補色強調），畫面一致不雜亂。
 - **評估報告**：記錄難易度、作答時間、錯誤次數、提示次數、答對時目標露出比例（覆蓋率），以及每回合的眼球軌跡：一般版（路徑與起訖點）與數字版（注視順序），並計算注視點數、路徑長度、來回比對次數、首次看到目標時間。可匯出含軌跡圖的網頁報告（存到「文件\小柯眼動探險島報告」）。
 
+## 安裝
+- **Windows 11**：下載 `XiaokeEyeIsland-Setup.exe` 安裝（會建立桌面捷徑）。
+- **macOS**（Intel／Apple 晶片皆可）：下載 `XiaokeEyeIsland-macOS.dmg`，把「小柯機器人眼動探險島」拖到「應用程式」。第一次開啟若被擋，請在 App 上按右鍵 →「打開」，或到「系統設定 → 隱私權與安全性」按「強制打開」。
+- 兩個平台都請一併安裝 [眼動鼠](https://github.com/achir1015/eyemouse/releases/latest)（1.3.0 以上），遊戲啟動時會自動開啟並連線。
+
 ## 開發
 - 語音：`python -I tools/gen_voice.py`（讀 `scripts/data.gd` 與 `scripts/games/*.gd` 的 `VOICE`）
 - 音樂音效：`python -I tools/gen_audio.py`（原創程序合成）
 - 圖示：`godot --headless -s res://tools/make_icons.gd`
 - Windows 版：`bash tools/build_win.sh` → `../build/release/XiaokeEyeIsland-Setup.exe`
+- macOS 版：專案複製到 Mac 的 `~/Developer/xiaoke-eyeisland`，`bash platform/macos/build-dmg.sh` → `~/Developer/xiaoke-eyeisland-build/XiaokeEyeIsland-macOS.dmg`（ad-hoc 簽章）
 - 測試：`godot --path . -- --test --no-link --play=<遊戲>:<難度> --autoplay [--demo] [--wrong=0.3] --shots=<資料夾> --quit`
 - 新增小遊戲：見 `docs/DEV_GAMES.md`
 
