@@ -1,4 +1,8 @@
 # 小柯機器人眼動探險島
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/ea8c1bd2-18f1-404e-a1e2-6b718b4c6dd7" />
+說明
+
+https://github.com/user-attachments/assets/0567c2de-01ce-43c4-8377-81bc3d759435
 
 給 3～10 歲孩子的 **3D 眼動視知覺遊戲**（Godot 4.7）。搭配「眼動鼠 EyeMouse」使用：孩子只要用眼睛看著物品或按鈕、等圈圈畫滿就能選取，不需要手。
 
